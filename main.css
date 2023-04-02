@@ -1,12 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;700&display=swap');
 body{
     background-color: #101d3e;
     color: #9CA839;
     direction: rtl;
 }
-h1{
-    text-align: center;
-}
-
 #banner-1{
     height: 100%;
     width:100%;
@@ -34,7 +31,16 @@ height: 30vh;
 #registration a button{
     color: #101d3e;
     background-color: #9CA839;
-    font-size: 2rem;
-    border-color: 1px aliceblue;
+    font-size: 3em;
+    font-family: "Cairo";
+    border-color: #f4d225;
+    border-radius: 15px;
+}
+
+#registration a button:hover{
+    background-color: #101d3e;
+    color: #9CA839;
+    font-size: 3em;
+    border-color: #9CA839;
     cursor: pointer;
 }

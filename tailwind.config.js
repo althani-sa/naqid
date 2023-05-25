@@ -4,17 +4,19 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./Components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     colors: {
       white: "white",
       black: "black",
       gray: "#221F1F",
+      green: "#9BA839",
+      darkBlue: "#0F1D3E",
       none: "transperant",
     },
     fontFamily: {
-      janna: ["var(FontVariable)", ...fontFamily.sans],
+      cairo: ["cairo", ...fontFamily.sans],
     },
 
     screens: {

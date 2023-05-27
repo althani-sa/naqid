@@ -32,7 +32,7 @@ const Landing = ({ landingImage, landingSupportingText }) => {
         </button>
       </div>
       {/* Landing Image */}
-      <div className="basis-5/10 z-20">
+      <div className="basis-5/10 z-20 tab:hidden">
         <Image
           src={landingImage}
           alt=""

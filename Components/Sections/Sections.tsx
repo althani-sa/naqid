@@ -16,7 +16,7 @@ const Sections = ({
       pb="5rem"
       pt="3rem"
     >
-      <div className="basis-1/2">
+      <div className="basis-1/2 tab:pt-[100vw]">
         <SectionHeading title={programSectionsHeadline} />
         <div className="flex flex-col gap-4 mt-20 mb-16">
           {programSections.map((section, i) => {
@@ -47,7 +47,8 @@ const Sections = ({
         alt=""
         width={100000}
         height={1000000}
-        className="absolute top-0 left-0 h-full w-auto"
+        className="absolute top-0 left-0 h-full w-auto
+                    tab:w-full tab:h-auto"
       />
     </Section>
   );

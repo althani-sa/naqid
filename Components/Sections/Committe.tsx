@@ -9,7 +9,7 @@ const Committe = ({ committeeHeadline, committeeMembers }) => {
   return (
     <Section items="start" className="bg-darkBlue" pb="10rem">
       <SectionHeading title={committeeHeadline} white />
-      <div className="w-full grid grid-cols-3 gap-28 mt-28">
+      <div className="w-full grid grid-cols-3 desc:grid-cols-2 tab:grid-cols-1 gap-28 mt-28">
         {committeeMembers.map(({ name, image }, i) => {
           return (
             <div

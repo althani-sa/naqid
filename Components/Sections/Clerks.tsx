@@ -1,6 +1,8 @@
+import AppContext from "AppContext";
 import SectionHeading from "Components/Common/SectionHeading";
 import { Section } from "Components/Styled/Section";
 import Image from "next/image";
+import { useContext } from "react";
 
 const Clerks = ({
   profileClerks,
@@ -9,8 +11,13 @@ const Clerks = ({
   cretiqueClerksHeadline,
   clerksImage,
 }) => {
+  let { screenWidth } = useContext(AppContext);
   return (
-    <Section direction="row" pr="0">
+    <Section
+      direction={screenWidth > 768 ? "row" : "column"}
+      pr="0"
+      gap={screenWidth < 768 && "7rem"}
+    >
       <div className="basis-1/2">
         <Image
           className="w-full h-auto"
@@ -20,7 +27,7 @@ const Clerks = ({
           height={10000}
         />
       </div>
-      <div className="basis-1/2">
+      <div className="basis-1/2 pr-28">
         <SectionHeading title={profileClerksHeadline} />
         <div className="w-full grid grid-cols-2 gap-10 gap-y-8 mt-16 mb-24">
           {profileClerks.map((clerk, i) => {

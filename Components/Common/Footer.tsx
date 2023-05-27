@@ -16,7 +16,7 @@ const Footer = ({}) => {
     <footer className="px-36 py-28 desc:px-20 pb-10 bg-darkBlue text-white ">
       <div className="container flex flex-row-reverse justify-between items-center desc:flex-col desc:items-center">
         {/* Start sLogo */}
-        <div className="flex flex-col items-center tab:items-center gap-8 tab:mb-10 self-start">
+        <div className="flex flex-col items-center tab:items-center gap-8 tab:mb-10 self-start tab:self-center">
           <Image
             src={require("../../public/Assets/Svg/WhiteLogo.svg")}
             width={251}
@@ -74,7 +74,7 @@ const Footer = ({}) => {
         </button>
       </div>
       <div className="container flex mob:flex-col mob:items-center mt-10 tab:mt-10 ">
-        <div className="links flex flex-row-reverse mob:flex-col flex-1 justify-center items-center gap-10 border-t-2 border-blue text-white border-opacity-20 mob:border-opacity-0 pt-6 mob:gap-5 tab:text-xl">
+        <div className="links flex flex-row-reverse flex-1 justify-center items-center gap-10 border-t-2 border-blue text-white border-opacity-20 mob:border-opacity-0 pt-6 mob:gap-5 tab:text-xl tab:w-full">
           <Link
             href={"#"}
             rel="noreferrer"

@@ -1,16 +1,23 @@
+import AppContext from "AppContext";
 import SectionHeading from "Components/Common/SectionHeading";
 import { Paragraph } from "Components/Styled/Paragraph";
 import { Section } from "Components/Styled/Section";
 import Image from "next/image";
+import { useContext } from "react";
 
 const Goals = ({ goalsHeadline, goalsText, goalsImage }) => {
+  let { screenWidth } = useContext(AppContext);
   return (
-    <Section direction="row" pl="0">
-      <div className="flex flex-col gap-10 basis-5/10">
+    <Section
+      direction={screenWidth > 768 ? "row" : "column-reverse"}
+      pl="0"
+      pr={screenWidth < 768 && "0"}
+    >
+      <div className="flex flex-col gap-10 basis-5/10 tab:px-28">
         <SectionHeading title={goalsHeadline} />
         <Paragraph>{goalsText}</Paragraph>
       </div>
-      <div className="basis-5/10">
+      <div className="basis-5/10 tab:mb-24">
         <Image
           src={goalsImage}
           alt=""

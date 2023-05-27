@@ -1,7 +1,9 @@
+import AppContext from "AppContext";
 import SectionHeading from "Components/Common/SectionHeading";
 import { Paragraph } from "Components/Styled/Paragraph";
 import { Section } from "Components/Styled/Section";
 import Image from "next/image";
+import { useContext } from "react";
 
 const Target = ({
   targetHeadline,
@@ -10,8 +12,13 @@ const Target = ({
   durationText,
   targetImage,
 }) => {
+  let { screenWidth } = useContext(AppContext);
   return (
-    <Section direction="row" items="start" pr="0">
+    <Section
+      direction={screenWidth > 768 ? "row" : "column"}
+      items="start"
+      pr="0"
+    >
       <div className="basis-5/10">
         <Image
           src={targetImage}
@@ -21,7 +28,7 @@ const Target = ({
           height={10000}
         />
       </div>
-      <div className="basis-1/2">
+      <div className="basis-1/2 tab:pr-28">
         <SectionHeading title={targetHeadline} />
         <Paragraph className="mb-16">{targetText}</Paragraph>
         <SectionHeading title={durationHeadline} />

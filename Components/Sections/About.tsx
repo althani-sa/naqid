@@ -1,12 +1,19 @@
 import { Section } from "Components/Styled/Section";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import aboutUsBg from "../../public/Assets/Images/AboutUsBg.png";
+import AppContext from "AppContext";
 
 const About = ({ aboutUsText, aboutUsSections, aboutUsImage }) => {
+  let { screenWidth } = useContext(AppContext);
   return (
-    <Section direction="row" items="start" pr="0" pb="0">
-      <div className="basis-5/10">
+    <Section
+      direction={screenWidth > 768 ? "row" : "column"}
+      items="start"
+      pr="0"
+      pb="0"
+    >
+      <div className="basis-5/10 tab:pl-32">
         <Image
           alt=""
           src={aboutUsImage}
@@ -15,7 +22,7 @@ const About = ({ aboutUsText, aboutUsSections, aboutUsImage }) => {
           height={10000}
         />
       </div>
-      <div className="basis-5/10">
+      <div className="basis-5/10 tab:pr-28">
         <p className="text-2xl font-semibold leading-10 mb-10">{aboutUsText}</p>
         {aboutUsSections.map((section, i) => {
           return (

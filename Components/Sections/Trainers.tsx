@@ -8,7 +8,7 @@ const Trainers = ({ trainersTeam, trainersTeamHeadline }) => {
   return (
     <Section items="start" className="overflow-hidden">
       <SectionHeading title={trainersTeamHeadline} />
-      <div className="grid grid-cols-5 gap-32 mt-36">
+      <div className="grid grid-cols-5 desc:grid-cols-3 tab:grid-cols-2 gap-32 mt-36">
         {trainersTeam.map(({ name, image }, i) => {
           return (
             <div

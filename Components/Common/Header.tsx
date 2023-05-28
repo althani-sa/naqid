@@ -44,9 +44,15 @@ const Header = () => {
       style={{ direction: "ltr" }}
     >
       <div className="">
-        <button className="px-5 py-2 border-darkBlue border-2 rounded-2xl text-darkBlue text-2xl">
+        <Link
+          className="px-5 py-2 border-darkBlue border-2 rounded-2xl text-darkBlue text-2xl"
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSfNF4QUVDppaiUl3uFrmrvjzT1cca5B_5p4QKgplhfq5GT6Ew/viewform"
+          }
+          target="_blank"
+        >
           التسجيل
-        </button>
+        </Link>
       </div>
       {/* Links */}
       <ul

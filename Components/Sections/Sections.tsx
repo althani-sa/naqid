@@ -4,6 +4,7 @@ import Image from "next/image";
 import greenWing from "../../public/Assets/Svg/GreenWing.svg";
 import { useContext } from "react";
 import AppContext from "AppContext";
+import Link from "next/link";
 
 const Sections = ({
   programSectionsHeadline,
@@ -42,12 +43,15 @@ const Sections = ({
             );
           })}
         </div>
-        <button
-          className="text-darkBlue font-bold px-7 py-4 rounded-3xl bg-green text-4xl
+        <Link
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSfNF4QUVDppaiUl3uFrmrvjzT1cca5B_5p4QKgplhfq5GT6Ew/viewform"
+          }
+          className="block w-fit text-darkBlue font-bold px-7 py-4 rounded-3xl bg-green text-4xl
         tab:text-3xl"
         >
           سارع بالتسجيل في ناقد
-        </button>
+        </Link>
       </div>
       {/* Image */}
       <Image

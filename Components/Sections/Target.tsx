@@ -3,6 +3,7 @@ import SectionHeading from "Components/Common/SectionHeading";
 import { Paragraph } from "Components/Styled/Paragraph";
 import { Section } from "Components/Styled/Section";
 import Image from "next/image";
+import Link from "next/link";
 import { useContext } from "react";
 
 const Target = ({
@@ -40,12 +41,16 @@ const Target = ({
         <Paragraph className="mb-16">{targetText}</Paragraph>
         <SectionHeading title={durationHeadline} />
         <Paragraph>{durationText}</Paragraph>
-        <button
-          className="font-bold px-7 py-4 rounded-3xl bg-darkBlue text-white text-2xl mt-16
+        <Link
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSfNF4QUVDppaiUl3uFrmrvjzT1cca5B_5p4QKgplhfq5GT6Ew/viewform"
+          }
+          target="_blank"
+          className="block w-fit font-bold px-7 py-4 rounded-3xl bg-darkBlue text-white text-2xl mt-16
                             tab:mt-10"
         >
           سجّل الآن
-        </button>
+        </Link>
       </div>
     </Section>
   );

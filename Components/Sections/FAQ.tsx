@@ -68,7 +68,13 @@ const FAQ = ({ faqsHeadline, faqs }) => {
             }`}
           >
             للتسجيل في البرنامج الرجاء زيارة رابط التسجيل من
-            <Link href={"#"} className="underline">
+            <Link
+              href={
+                "https://docs.google.com/forms/d/e/1FAIpQLSfNF4QUVDppaiUl3uFrmrvjzT1cca5B_5p4QKgplhfq5GT6Ew/viewform"
+              }
+              target="_blank"
+              className="underline"
+            >
               {" "}
               هنا.
             </Link>

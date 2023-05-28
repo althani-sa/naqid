@@ -34,15 +34,14 @@ const FAQ = ({ faqsHeadline, faqs }) => {
                 icon={faArrowDown}
               />
               <h4 className=" font-bold mb-4">{question}</h4>
-              <p
+              <div
+                dangerouslySetInnerHTML={{ __html: answer }}
                 className={`mb-2 duration-200 ${
                   activeQuestionIndex == i
                     ? "opacity-100 visible"
                     : "opacity-0 invisible"
                 }`}
-              >
-                {answer}
-              </p>
+              />
             </div>
           );
         })}

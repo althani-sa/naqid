@@ -9,6 +9,7 @@ import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import AppContext from "AppContext";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = ({}) => {
   let { isArabic } = useContext(AppContext);
@@ -32,6 +33,15 @@ const Footer = ({}) => {
             </p>
             <li className="link mb-9 text-end">
               <a
+                href={"/"}
+                rel="noreferrer"
+                className=" font-Larrseit text-sm tab:text-2xl text-white opacity-70 "
+              >
+                الرئيسية
+              </a>
+            </li>
+            <li className="link mb-9 text-end">
+              <a
                 href={"/#about"}
                 rel="noreferrer"
                 className=" font-Larrseit text-sm tab:text-2xl text-white opacity-70 "
@@ -41,64 +51,79 @@ const Footer = ({}) => {
             </li>
             <li className="link mb-9 text-end">
               <a
-                href={"/#contact"}
+                href={"/#plan"}
                 rel="noreferrer"
                 className=" font-Larrseit text-sm tab:text-2xl text-white opacity-70 "
               >
-                التواصل
+                خطة البرنامج
               </a>
             </li>
             <li className="link mb-9 text-end">
               <a
-                href={"/#services"}
+                href={"/#conditions"}
                 rel="noreferrer"
                 className=" font-Larrseit text-sm tab:text-2xl text-white opacity-70 "
               >
-                الخدمات
+                شروط التسجيل
               </a>
             </li>
             <li className="link mb-9 text-end">
               <a
-                href={"/#features"}
+                href={"/#outputs"}
                 rel="noreferrer"
                 className=" font-Larrseit text-sm tab:text-2xl text-white opacity-70 "
               >
-                المزايا
+                المحاور والمخرجات
+              </a>
+            </li>
+            <li className="link mb-9 text-end">
+              <a
+                href={"/#faq"}
+                rel="noreferrer"
+                className=" font-Larrseit text-sm tab:text-2xl text-white opacity-70 "
+              >
+                الأسئلة الشائعة
               </a>
             </li>
           </ul>
         </div>
         {/* Start Links */}
-        <button className="text-white px-7 py-4 rounded-3xl bg-green text-3xl">
+        <Link
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSfNF4QUVDppaiUl3uFrmrvjzT1cca5B_5p4QKgplhfq5GT6Ew/viewform"
+          }
+          target="_blank"
+          className="block w-fit text-white px-7 py-4 rounded-3xl bg-green text-3xl"
+        >
           التسجيل في ناقد
-        </button>
+        </Link>
       </div>
       <div className="container flex mob:flex-col mob:items-center mt-10 tab:mt-10 ">
         <div className="links flex flex-row-reverse flex-1 justify-center items-center gap-10 border-t-2 border-blue text-white border-opacity-20 mob:border-opacity-0 pt-6 mob:gap-5 tab:text-xl tab:w-full">
           <Link
-            href={"#"}
+            href={"https://www.youtube.com/@saudicomplit4395"}
+            target="_blank"
             rel="noreferrer"
             className="tab:text-3xl w-10 aspect-square desc:w-16 flex items-center justify-center rounded-full border-blue border-2 border-opacity-30"
             hrefLang="en"
           >
-            {" "}
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faYoutube} />
           </Link>
           <Link
-            href={"#"}
+            href={"https://www.facebook.com/SaudiCompLit/"}
+            target="_blank"
             rel="noreferrer"
             className="tab:text-3xl w-10 aspect-square desc:w-16 flex items-center justify-center rounded-full border-blue border-2 border-opacity-30"
             hrefLang="en"
           >
-            {" "}
             <FontAwesomeIcon icon={faFacebookF} />
           </Link>
           <Link
-            href={"#"}
+            href={"https://twitter.com/SaudiCLSociety"}
+            target="_blank"
             rel="noreferrer"
             className="tab:text-3xl w-10 aspect-square desc:w-16 flex items-center justify-center rounded-full border-blue border-2 border-opacity-30"
           >
-            {" "}
             <FontAwesomeIcon icon={faTwitter} />
           </Link>
         </div>

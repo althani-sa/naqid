@@ -50,7 +50,7 @@ const Header = () => {
       </div>
       {/* Links */}
       <ul
-        className={`flex flex-row-reverse items-center gap-8 text-white tab:fixed tab:top-0 tab:right-0 tab:h-full tab:w-full duration-500 mob:bg-blue mob:z-[9999] mob:flex-col mob:items-center mob:justify-center ease-out ${
+        className={`flex flex-row-reverse items-center gap-8 text-white tab:fixed tab:top-0 tab:right-0 tab:h-full tab:w-full duration-500 mob:bg-darkBlue mob:z-[9999] mob:flex-col mob:items-center mob:justify-center ease-out ${
           sidebarIsActive ? "tab:-translate-y-0" : "tab:-translate-y-full"
         }`}
       >

@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <header
       className="flex items-center justify-between px-24 bg-green
-      tab:py-8 tab:px-10"
+      tab:py-5 tab:px-10 tab:fixed tab:top-0 tab:left-0 tab:w-full z-50"
       style={{ direction: "ltr" }}
     >
       <div className="">

@@ -12,7 +12,7 @@ const Outputs = ({
 }) => {
   let { screenWidth } = useContext(AppContext);
   return (
-    <Section direction={screenWidth > 768 ? "" : ""} pr="0" gap="5rem">
+    <Section direction={screenWidth > 768 ? "row" : "column"} pr="0" gap="5rem">
       <div className="basis-1/2">
         <Image
           src={programOutputsImage}

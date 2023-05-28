@@ -26,7 +26,7 @@ const Agenda = ({
         {agendaDetails.map(({ days, title }, i) => {
           return (
             <div
-              className={`relative col-span-1 w-full aspect-square rounded-full flexCenter bg-darkBlue  mt-7 mb-28  after:w-[400%] after:h-2 after:bg-darkBlue after:-z-10 after:absCenter
+              className={`group relative col-span-1 w-full aspect-square rounded-full flexCenter bg-darkBlue  mt-7 mb-28  after:w-[400%] after:h-2 after:bg-darkBlue after:-z-10 after:absCenter
               tab:w-32 tab:after:w-2 tab:after:h-[250%] tab:after:-z-10 tab:mb-0 ${
                 i == 0
                   ? "tab:after:centerH tab:after:top-[200%]"
@@ -42,13 +42,22 @@ const Agenda = ({
               >
                 {days}
               </h3>
-              <Image
-                src={closedBook.src}
-                alt=""
-                className="w-8/10 h-auto"
-                width={1000}
-                height={10000}
-              />
+              <div className="relative w-8/10">
+                <Image
+                  src={closedBook.src}
+                  alt=""
+                  className="w-full h-auto absCenter group-hover:opacity-0 duration-300"
+                  width={1000}
+                  height={10000}
+                />
+                <Image
+                  src={openedBook.src}
+                  alt=""
+                  className="w-full h-auto absCenter opacity-0 group-hover:opacity-100 duration-300"
+                  width={1000}
+                  height={10000}
+                />
+              </div>
               <p
                 className="centerH top-full translate-y-4 w-32 text-black opacity-50 text-center
                             tab:top-16 tab:w-52 tab:right-6/10 tab:translate-y-0 tab:text-start"

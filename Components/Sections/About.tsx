@@ -35,14 +35,14 @@ const About = ({ aboutUsText, aboutUsSections, aboutUsImage }) => {
           {aboutUsSections.map((section, i) => {
             return (
               <div
-                className="relative py-6 pr-52 bg-darkBlue text-white mb-5 rounded-full text-xl shadow-xl h-24 flex items-center max-h-24
+                className="relative py-6 pr-40 bg-darkBlue text-white mb-5 rounded-full text-xl shadow-xl h-20 flex items-center max-h-20
                 tab:pr-40 tab:pl-5 tab:max-h-20"
                 key={i}
               >
                 {section}
                 <span
-                  className="flexCenter centerV right-0 h-full text-center px-16 rounded-full bg-green text-white text-3xl
-                tab:px-10"
+                  className="flexCenter centerV right-0 h-full text-center px-10 rounded-full bg-green text-white text-3xl
+                "
                 >
                   0{i}
                 </span>

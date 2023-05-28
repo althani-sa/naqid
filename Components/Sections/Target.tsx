@@ -20,6 +20,8 @@ const Target = ({
       pr="0"
       pl={screenWidth < 768 && "1rem"}
       pt={screenWidth < 768 && "5rem"}
+      id="target"
+      className="scroll-mt-32"
     >
       <div
         className="basis-5/10

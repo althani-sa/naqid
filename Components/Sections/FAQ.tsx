@@ -10,7 +10,12 @@ const FAQ = ({ faqsHeadline, faqs }) => {
   let { screenWidth } = useContext(AppContext);
 
   return (
-    <Section pb="5rem" px={screenWidth < 768 && "2rem"}>
+    <Section
+      pb="5rem"
+      px={screenWidth < 768 && "2rem"}
+      id="faq"
+      className="scroll-mt-32"
+    >
       <SectionHeading title={faqsHeadline} />
       <div className="mt-20 flex flex-col w-full items-stretch">
         {faqs.map(({ question, answer }, i) => {

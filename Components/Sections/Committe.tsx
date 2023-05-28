@@ -12,9 +12,10 @@ const Committe = ({ committeeHeadline, committeeMembers }) => {
   return (
     <Section
       items="start"
-      className="bg-darkBlue"
+      className="bg-darkBlue scroll-mt-32"
       pb="10rem"
       px={screenWidth < 768 && "2rem"}
+      id="commite"
     >
       <SectionHeading title={committeeHeadline} white />
       <div className="w-full grid grid-cols-3 desc:grid-cols-2 tab:grid-cols-1 gap-28 mt-28 px-20">

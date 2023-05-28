@@ -31,6 +31,7 @@ import Reviewers from "Components/Sections/Reviewers";
 import Clerks from "Components/Sections/Clerks";
 import clerksImage from "../public/Assets/Images/ClerksImage.png";
 import FAQ from "Components/Sections/FAQ";
+import { motion } from "framer-motion";
 
 export default function Home({
   homepageData,
@@ -43,67 +44,174 @@ export default function Home({
         landingImage={homepageData.landingImage}
         landingSupportingText={homepageData.landingSupportingText}
       />
-      <About
-        aboutUsImage={aboutImage.src}
-        aboutUsSections={homepageData.aboutUsSections}
-        aboutUsText={homepageData.aboutUsText}
-      />
-      <Goals
-        goalsHeadline={homepageData.goalsHeadline}
-        goalsText={homepageData.goalsText}
-        goalsImage={goalsImage.src}
-      />
-      <Target
-        durationHeadline={homepageData.durationHeadline}
-        durationText={homepageData.durationText}
-        targetHeadline={homepageData.targetHeadline}
-        targetText={homepageData.targetText}
-        targetImage={targetImage.src}
-      />
-      <Agenda
-        agendaHeadline={homepageData.agendaHeadline}
-        agendaDetails={homepageData.agendaDetails}
-        agendaText={homepageData.agendaText}
-      />
-      <Conditions
-        conditions={homepageData.conditions}
-        conditionsHeadline={homepageData.conditionsHeadline}
-        conditionsImage={homepageData.conditionsImage}
-      />
-      <Sections
-        programSections={homepageData.programSections}
-        programSectionsHeadline={homepageData.programSectionsHeadline}
-        programSectionsImage={sectionsImage.src}
-      />
-      <Details
-        programDetails={homepageData.programDetails}
-        programDetailsHeadline={homepageData.programDetailsHeadline}
-      />
-      <Outputs
-        programOutputsHeadline={homepageData.programOutputsHeadline}
-        programOutputsImage={outputsImage.src}
-        programOutputsText={homepageData.programOutputsText}
-      />
-      <Committe
-        committeeHeadline={homepageData.committeeHeadline}
-        committeeMembers={homepageData.committeeMembers}
-      />
-      <Trainers
-        trainersTeam={homepageData.trainersTeam}
-        trainersTeamHeadline={homepageData.trainersTeamHeadline}
-      />
-      <Reviewers
-        reviewers={homepageData.reviewers}
-        reviewersHeadline={homepageData.reviewersHeadline}
-      />
-      <Clerks
-        cretiqueClerks={homepageData.cretiqueClerks}
-        cretiqueClerksHeadline={homepageData.cretiqueClerksHeadline}
-        profileClerks={homepageData.profileClerks}
-        profileClerksHeadline={homepageData.profileClerksHeadline}
-        clerksImage={clerksImage.src}
-      />
-      <FAQ faqs={homepageData.faqs} faqsHeadline={homepageData.faqsHeadline} />
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <About
+          aboutUsImage={aboutImage.src}
+          aboutUsSections={homepageData.aboutUsSections}
+          aboutUsText={homepageData.aboutUsText}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <Goals
+          goalsHeadline={homepageData.goalsHeadline}
+          goalsText={homepageData.goalsText}
+          goalsImage={goalsImage.src}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <Target
+          durationHeadline={homepageData.durationHeadline}
+          durationText={homepageData.durationText}
+          targetHeadline={homepageData.targetHeadline}
+          targetText={homepageData.targetText}
+          targetImage={targetImage.src}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <Agenda
+          agendaHeadline={homepageData.agendaHeadline}
+          agendaDetails={homepageData.agendaDetails}
+          agendaText={homepageData.agendaText}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <Conditions
+          conditions={homepageData.conditions}
+          conditionsHeadline={homepageData.conditionsHeadline}
+          conditionsImage={homepageData.conditionsImage}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <Sections
+          programSections={homepageData.programSections}
+          programSectionsHeadline={homepageData.programSectionsHeadline}
+          programSectionsImage={sectionsImage.src}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <Details
+          programDetails={homepageData.programDetails}
+          programDetailsHeadline={homepageData.programDetailsHeadline}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <Outputs
+          programOutputsHeadline={homepageData.programOutputsHeadline}
+          programOutputsImage={outputsImage.src}
+          programOutputsText={homepageData.programOutputsText}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <Committe
+          committeeHeadline={homepageData.committeeHeadline}
+          committeeMembers={homepageData.committeeMembers}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <Trainers
+          trainersTeam={homepageData.trainersTeam}
+          trainersTeamHeadline={homepageData.trainersTeamHeadline}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <Reviewers
+          reviewers={homepageData.reviewers}
+          reviewersHeadline={homepageData.reviewersHeadline}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <Clerks
+          cretiqueClerks={homepageData.cretiqueClerks}
+          cretiqueClerksHeadline={homepageData.cretiqueClerksHeadline}
+          profileClerks={homepageData.profileClerks}
+          profileClerksHeadline={homepageData.profileClerksHeadline}
+          clerksImage={clerksImage.src}
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        <FAQ
+          faqs={homepageData.faqs}
+          faqsHeadline={homepageData.faqsHeadline}
+        />
+      </motion.div>
     </div>
   );
 }

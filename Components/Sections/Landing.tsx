@@ -3,6 +3,7 @@ import { Section } from "../Styled/Section";
 import BgTexture from "../../public/Assets/Images/BgTexture.png";
 import { useContext } from "react";
 import AppContext from "../../AppContext";
+import { motion } from "framer-motion";
 
 const Landing = ({ landingImage, landingSupportingText }) => {
   let { screenWidth } = useContext(AppContext);
@@ -18,7 +19,15 @@ const Landing = ({ landingImage, landingSupportingText }) => {
         style={{ backgroundImage: `url(${BgTexture.src})` }}
       />
       {/* Landing Content */}
-      <div className="flex flex-col items-center basis-5/10 tab:mb-20 z-20">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 1,
+          delay: 0.8,
+        }}
+        className="flex flex-col items-center basis-5/10 tab:mb-20 z-20"
+      >
         <Image
           src={require("../../public/Assets/Svg/WhiteLogo.svg")}
           alt=""
@@ -37,9 +46,17 @@ const Landing = ({ landingImage, landingSupportingText }) => {
         >
           التسجيل في ناقد
         </button>
-      </div>
+      </motion.div>
       {/* Landing Image */}
-      <div className="basis-5/10 z-20 tab:hidden">
+      <motion.div
+        initial={{ opacity: 0, x: -40 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          duration: 1,
+          delay: 0.2,
+        }}
+        className="basis-5/10 z-20 tab:hidden"
+      >
         <Image
           src={landingImage}
           alt=""
@@ -47,7 +64,7 @@ const Landing = ({ landingImage, landingSupportingText }) => {
           height={9999}
           className="w-full h-auto"
         />
-      </div>
+      </motion.div>
     </Section>
   );
 };

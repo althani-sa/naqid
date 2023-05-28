@@ -12,6 +12,8 @@ const Goals = ({ goalsHeadline, goalsText, goalsImage }) => {
       direction={screenWidth > 768 ? "row" : "column-reverse"}
       pl="0"
       pr={screenWidth < 768 && "0"}
+      id="goals"
+      className="scroll-mt-32"
     >
       <div
         className="flex flex-col gap-10 basis-5/10

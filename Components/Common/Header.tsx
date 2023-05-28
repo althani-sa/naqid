@@ -10,27 +10,27 @@ const headerLinks = [
     name: "الصفحة الرئيسية",
   },
   {
-    link: "/about",
+    link: "/#about",
     name: "عن البرنامج",
   },
+  // {
+  //   link: "/#who",
+  //   name: "لمن ناقد؟",
+  // },
   {
-    link: "/who",
-    name: "لمن ناقد؟",
-  },
-  {
-    link: "/plan",
+    link: "/#plan",
     name: "خطة البرنامج",
   },
   {
-    link: "/conditions",
+    link: "/#conditions",
     name: "شروط التسجيل",
   },
   {
-    link: "/topics",
+    link: "/#topics",
     name: "المحاور والمخرجات",
   },
   {
-    link: "/faq",
+    link: "/#faq",
     name: "الأسئلة الشائعة",
   },
 ];
@@ -58,7 +58,7 @@ const Header = () => {
           return (
             <li
               key={i}
-              className="py-8 relative hover:text-darkBlue duration-100 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:rounded-2xl after:bg-orange after:opacity-0 hover:after:opacity-100 after:duration-200"
+              className="py-8 relative hover:text-darkBlue duration-100 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:rounded-2xl after:bg-orange after:opacity-0 hover:after:opacity-100 after:duration-200 opacity-0 animate-fadeIn"
             >
               <Link
                 href={link}

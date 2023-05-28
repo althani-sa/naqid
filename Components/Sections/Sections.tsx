@@ -15,10 +15,11 @@ const Sections = ({
     <Section
       direciton="row"
       items="start"
-      className="overflow-hidden"
+      className="overflow-hidden scroll-mt-32"
       pb="5rem"
       pt="3rem"
       px={screenWidth < 768 && "2rem"}
+      id="topics"
     >
       <div className="basis-1/2 tab:pt-[100vw]">
         <SectionHeading title={programSectionsHeadline} />

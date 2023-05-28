@@ -12,6 +12,8 @@ const Conditions = ({ conditionsHeadline, conditionsImage, conditions }) => {
       direction={screenWidth > 768 ? "row" : "column"}
       pr="0"
       gap={screenWidth > 768 ? "5rem" : "0"}
+      id="conditions"
+      className="scroll-mt-32"
     >
       <div
         className="basis-1/2

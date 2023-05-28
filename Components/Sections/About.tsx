@@ -13,6 +13,8 @@ const About = ({ aboutUsText, aboutUsSections, aboutUsImage }) => {
       pr="0"
       pl={screenWidth < 768 && "0"}
       pb="0"
+      id="about"
+      className="scroll-mt-32"
     >
       <div
         className="basis-5/10

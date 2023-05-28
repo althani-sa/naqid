@@ -24,6 +24,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+:root {
+  --fontsource-display: swap;
+}
+
 *,
 *::after,
 *::before {

@@ -19,7 +19,7 @@ const Agenda = ({
 }) => {
   let { screenWidth } = useContext(AppContext);
   return (
-    <Section items="start" px={screenWidth < 768 && "2rem"}>
+    <Section items="start" px={screenWidth < 768 && "2rem"} id="plan">
       <SectionHeading title={agendaHeadline} />
       <Paragraph className="mb-20 tab:mb-10">{agendaText}</Paragraph>
       <div className="grid grid-cols-10 tab:grid-cols-1 w-full gap-10 overflow-x-clip">

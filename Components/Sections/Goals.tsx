@@ -13,7 +13,10 @@ const Goals = ({ goalsHeadline, goalsText, goalsImage }) => {
       pl="0"
       pr={screenWidth < 768 && "0"}
     >
-      <div className="flex flex-col gap-10 basis-5/10 tab:px-28">
+      <div
+        className="flex flex-col gap-10 basis-5/10
+      tab:px-8"
+      >
         <SectionHeading title={goalsHeadline} />
         <Paragraph>{goalsText}</Paragraph>
       </div>

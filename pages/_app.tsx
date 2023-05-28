@@ -25,7 +25,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <AppContext.Provider value={globalInfo}>
-      <main className="font-cairo" style={{ direction: "rtl" }}>
+      <main
+        className="font-cairo w-screen overflow-hidden"
+        style={{ direction: "rtl" }}
+      >
         <Header />
         <Component {...pageProps} />
         <Footer />

@@ -52,12 +52,16 @@ const Details = ({
         duration: 0.7,
       }}
     >
-      <Section id="details" className="scroll-mt-32">
+      <Section
+        id="details"
+        className="scroll-mt-32"
+        px={screenWidth < 768 && "2rem"}
+      >
         <SectionHeading title={programDetailsHeadline} />
         <div className="flex items-stretch tab:flex-col tab:gap-10 gap-0 w-full">
           {/* Services */}
           <div
-            className={`grid grid-cols-3 tab:grid-cols-2 gap-12 duration-500 basis-full pl-14 tab:pl-0 mt-28`}
+            className={`w-full grid grid-cols-3 tab:grid-cols-2 gap-12 duration-500 basis-full pl-14 tab:pl-0 mt-28`}
             id="detailsGrid"
           >
             {programDetails.map((detail, i) => {

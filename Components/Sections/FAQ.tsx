@@ -16,9 +16,10 @@ const FAQ = ({ faqsHeadline, faqs }) => {
         {faqs.map(({ question, answer }, i) => {
           return (
             <div
-              className={`relative py-4 text-2xl tab:text-xl border-t-2 px-20 duration-300 cursor-pointer ${
-                activeQuestionIndex == i ? "max-h-[20rem]" : "max-h-[4rem]"
-              }`}
+              className={`relative py-4 text-2xl tab:text-xl border-t-2 px-20 duration-300 cursor-pointer
+                tab:px-10 ${
+                  activeQuestionIndex == i ? "max-h-[20rem]" : "max-h-[4rem]"
+                }`}
               key={i}
               onClick={() => setActiveQuestionIndex(i)}
             >

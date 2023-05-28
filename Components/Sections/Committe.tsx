@@ -4,12 +4,20 @@ import Image from "next/image";
 import bgText from "../../public/Assets/Images/TextBg.png";
 import bgBirds from "../../public/Assets/Svg/BgBirds.svg";
 import leftShape from "../../public/Assets/Images/LeftShape.png";
+import { useContext } from "react";
+import AppContext from "AppContext";
 
 const Committe = ({ committeeHeadline, committeeMembers }) => {
+  let { screenWidth } = useContext(AppContext);
   return (
-    <Section items="start" className="bg-darkBlue" pb="10rem">
+    <Section
+      items="start"
+      className="bg-darkBlue"
+      pb="10rem"
+      px={screenWidth < 768 && "2rem"}
+    >
       <SectionHeading title={committeeHeadline} white />
-      <div className="w-full grid grid-cols-3 desc:grid-cols-2 tab:grid-cols-1 gap-28 mt-28">
+      <div className="w-full grid grid-cols-3 desc:grid-cols-2 tab:grid-cols-1 gap-28 mt-28 px-20">
         {committeeMembers.map(({ name, image }, i) => {
           return (
             <div
@@ -42,14 +50,14 @@ const Committe = ({ committeeHeadline, committeeMembers }) => {
       {/* BG TExt */}
       <Image
         src={bgText}
-        className="absolute top-20 left-10 w-[40rem]"
+        className="absolute top-20 left-10 w-[40rem] tab:opacity-40"
         alt=""
         width={10000}
         height={10000}
       />
       <Image
         src={bgBirds}
-        className="absolute top-0 left-0 w-[20rem]"
+        className="absolute top-0 left-0 w-[20rem] tab:opacity-40"
         alt=""
         width={10000}
         height={10000}

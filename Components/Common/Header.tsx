@@ -39,7 +39,8 @@ const Header = () => {
   let [sidebarIsActive, setSidebarIsActive] = useState(false);
   return (
     <header
-      className="flex items-center justify-between px-24 bg-green tab:py-8"
+      className="flex items-center justify-between px-24 bg-green
+      tab:py-8 tab:px-10"
       style={{ direction: "ltr" }}
     >
       <div className="">

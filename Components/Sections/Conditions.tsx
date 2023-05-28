@@ -13,7 +13,10 @@ const Conditions = ({ conditionsHeadline, conditionsImage, conditions }) => {
       pr="0"
       gap={screenWidth > 768 ? "5rem" : "0"}
     >
-      <div className="basis-1/2">
+      <div
+        className="basis-1/2
+      tab:mb-8"
+      >
         <Image
           src={conditionsImage}
           alt=""
@@ -22,8 +25,13 @@ const Conditions = ({ conditionsHeadline, conditionsImage, conditions }) => {
           className="w-full h-auto"
         />
       </div>
-      <div className="basis-1/2 tab:pr-28">
-        <SectionHeading title={conditionsHeadline} />
+      <div
+        className="basis-1/2
+                      tab:pr-8"
+      >
+        <div className="mb-24">
+          <SectionHeading title={conditionsHeadline} />
+        </div>
         {conditions.map((condition, i) => {
           return (
             <div key={i} className="flex items-center gap-4 mb-8 mt-10">

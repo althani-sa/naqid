@@ -14,10 +14,10 @@ export const Section = styled.div`
     ${(props) => props.px || props.pl || "7rem"};
 
   // Responsive
-  // @media (max-width: 768px) {
-  //   padding: ${(props) => props.pt || props.py || "6.75rem"}
-  //     ${(props) => props.px || props.pr || "2rem"}
-  //     ${(props) => props.pb || props.py || "6rem"}
-  //     ${(props) => props.px || "2rem"};
-  // }
+  @media (max-width: 768px) {
+    padding: ${(props) => props.pt || props.py || "8em"}
+      ${(props) => props.px || props.pr || "2rem"}
+      ${(props) => props.pb || props.py || "0rem"}
+      ${(props) => props.px || props.pl || "2rem"};
+  }
 `;

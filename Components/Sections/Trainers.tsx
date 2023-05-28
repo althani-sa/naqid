@@ -1,14 +1,20 @@
 import SectionHeading from "Components/Common/SectionHeading";
 import { Section } from "Components/Styled/Section";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import leftShapeFill from "../../public/Assets/Images/LeftShapeFill.png";
+import AppContext from "AppContext";
 
 const Trainers = ({ trainersTeam, trainersTeamHeadline }) => {
+  let { screenWidth } = useContext(AppContext);
   return (
-    <Section items="start" className="overflow-hidden">
+    <Section
+      items="start"
+      className="overflow-hidden"
+      px={screenWidth < 768 && "2rem"}
+    >
       <SectionHeading title={trainersTeamHeadline} />
-      <div className="grid grid-cols-5 desc:grid-cols-3 tab:grid-cols-2 gap-32 mt-36">
+      <div className="grid grid-cols-5 desc:grid-cols-3 tab:grid-cols-2 gap-32 mt-36 tab:px-10">
         {trainersTeam.map(({ name, image }, i) => {
           return (
             <div
@@ -30,7 +36,8 @@ const Trainers = ({ trainersTeam, trainersTeamHeadline }) => {
                 alt=""
                 width={1000}
                 height={1000}
-                className="w-32 absolute bottom-0 left-0 -translate-x-1/2 -z-10"
+                className="w-32 absolute bottom-0 left-0 -translate-x-1/2 -z-10 
+                tab:w-20"
               />
             </div>
           );

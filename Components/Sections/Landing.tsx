@@ -22,12 +22,19 @@ const Landing = ({ landingImage, landingSupportingText }) => {
         <Image
           src={require("../../public/Assets/Svg/WhiteLogo.svg")}
           alt=""
-          className="w-8/10 h-auto mb-16 tab:mx-auto"
+          className=" w-8/10 h-auto mb-16
+                      tab:mx-auto tab:w-full"
         />
-        <p className="text-3xl leading-[3rem] tab:text-justify mb-8">
+        <p
+          className="text-3xl leading-[3rem] mb-8
+                      tab:text-center"
+        >
           {landingSupportingText}
         </p>
-        <button className="text-darkBlue font-bold px-7 py-4 rounded-3xl bg-white text-4xl">
+        <button
+          className="text-darkBlue font-bold px-7 py-4 rounded-3xl bg-white text-4xl
+                    tab:text-2xl"
+        >
           التسجيل في ناقد
         </button>
       </div>

@@ -18,8 +18,13 @@ const Target = ({
       direction={screenWidth > 768 ? "row" : "column"}
       items="start"
       pr="0"
+      pl={screenWidth < 768 && "1rem"}
+      pt={screenWidth < 768 && "5rem"}
     >
-      <div className="basis-5/10">
+      <div
+        className="basis-5/10
+                      tab:mb-10"
+      >
         <Image
           src={targetImage}
           alt=""
@@ -28,12 +33,15 @@ const Target = ({
           height={10000}
         />
       </div>
-      <div className="basis-1/2 tab:pr-28">
+      <div className="basis-1/2 tab:pr-8">
         <SectionHeading title={targetHeadline} />
         <Paragraph className="mb-16">{targetText}</Paragraph>
         <SectionHeading title={durationHeadline} />
         <Paragraph>{durationText}</Paragraph>
-        <button className="font-bold px-7 py-4 rounded-3xl bg-darkBlue text-white text-2xl mt-24">
+        <button
+          className="font-bold px-7 py-4 rounded-3xl bg-darkBlue text-white text-2xl mt-24
+                            tab:mt-10"
+        >
           انضم الى برنامج ناقد
         </button>
       </div>

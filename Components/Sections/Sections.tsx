@@ -2,12 +2,15 @@ import SectionHeading from "Components/Common/SectionHeading";
 import { Section } from "Components/Styled/Section";
 import Image from "next/image";
 import greenWing from "../../public/Assets/Svg/GreenWing.svg";
+import { useContext } from "react";
+import AppContext from "AppContext";
 
 const Sections = ({
   programSectionsHeadline,
   programSections,
   programSectionsImage,
 }) => {
+  let { screenWidth } = useContext(AppContext);
   return (
     <Section
       direciton="row"
@@ -15,6 +18,7 @@ const Sections = ({
       className="overflow-hidden"
       pb="5rem"
       pt="3rem"
+      px={screenWidth < 768 && "2rem"}
     >
       <div className="basis-1/2 tab:pt-[100vw]">
         <SectionHeading title={programSectionsHeadline} />
@@ -23,7 +27,7 @@ const Sections = ({
             return (
               <div
                 key={i}
-                className="flex items-center gap-8 text-2xl after:centerV after:w-screen after:h-full py-4 after:bg-darkBlue after:right-0 relative after:-z-10 after:translate-x-1/3 text-white"
+                className="flex items-center gap-8 text-2xl after:centerV after:w-screen after:h-full py-4 after:bg-darkBlue after:right-0 relative after:-z-10 after:translate-x-1/3 text-white tab:after:translate-x-1/10"
               >
                 <Image
                   src={greenWing.src}
@@ -37,7 +41,10 @@ const Sections = ({
             );
           })}
         </div>
-        <button className="text-darkBlue font-bold px-7 py-4 rounded-3xl bg-green text-4xl">
+        <button
+          className="text-darkBlue font-bold px-7 py-4 rounded-3xl bg-green text-4xl
+        tab:text-3xl"
+        >
           سارع بالتسجيل في ناقد
         </button>
       </div>

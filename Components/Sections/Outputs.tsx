@@ -22,7 +22,7 @@ const Outputs = ({
           className="w-full h-auto"
         />
       </div>
-      <div className="basis-1/2 tab:pr-28 tab:mb-28">
+      <div className="basis-1/2 tab:pr-8 tab:mb-28">
         <SectionHeading title={programOutputsHeadline} />
         <Paragraph>{programOutputsText}</Paragraph>
       </div>

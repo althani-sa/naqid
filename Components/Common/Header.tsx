@@ -39,13 +39,13 @@ const Header = () => {
   let [sidebarIsActive, setSidebarIsActive] = useState(false);
   return (
     <header
-      className="flex items-center justify-between px-24 bg-green
-      tab:py-5 tab:px-10 tab:fixed tab:top-0 tab:left-0 tab:w-full z-50"
+      className="fixed top-0 left-0 w-full flex items-center justify-between px-24 bg-green
+      tab:py-5 tab:px-10  z-50"
       style={{ direction: "ltr" }}
     >
       <div className="">
         <button className="px-5 py-2 border-darkBlue border-2 rounded-2xl text-darkBlue text-2xl">
-          التسجيل في ناقد
+          التسجيل
         </button>
       </div>
       {/* Links */}

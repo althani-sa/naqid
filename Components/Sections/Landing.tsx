@@ -13,6 +13,7 @@ const Landing = ({ landingImage, landingSupportingText }) => {
       className="bg-cover bg-center bg-darkBlue text-white"
       gap="10rem"
       pb="5rem"
+      pt="10rem"
     >
       <div
         className="absCenter w-full h-full bg-cover bg-center opacity-40 after:absCenter after:w-full after:h-full after:bg-black after:bg-opacity-100"
@@ -44,7 +45,7 @@ const Landing = ({ landingImage, landingSupportingText }) => {
           className="text-darkBlue font-bold px-7 py-4 rounded-3xl bg-white text-4xl
                     tab:text-2xl"
         >
-          التسجيل في ناقد
+          بادر بالتسجيل الآن
         </button>
       </motion.div>
       {/* Landing Image */}

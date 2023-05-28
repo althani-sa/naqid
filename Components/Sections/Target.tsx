@@ -41,10 +41,10 @@ const Target = ({
         <SectionHeading title={durationHeadline} />
         <Paragraph>{durationText}</Paragraph>
         <button
-          className="font-bold px-7 py-4 rounded-3xl bg-darkBlue text-white text-2xl mt-24
+          className="font-bold px-7 py-4 rounded-3xl bg-darkBlue text-white text-2xl mt-16
                             tab:mt-10"
         >
-          انضم الى برنامج ناقد
+          سجّل الآن
         </button>
       </div>
     </Section>

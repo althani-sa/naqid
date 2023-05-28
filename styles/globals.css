@@ -22,6 +22,8 @@
 
 html {
   scroll-behavior: smooth !important;
+  width: 100vw !important;
+  overflow-x: hidden;
 }
 
 :root {

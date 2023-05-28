@@ -59,6 +59,7 @@ const Header = () => {
             <li
               key={i}
               className="py-8 relative hover:text-darkBlue duration-100 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:rounded-2xl after:bg-orange after:opacity-0 hover:after:opacity-100 after:duration-200 opacity-0 animate-fadeIn"
+              onClick={() => setSidebarIsActive(false)}
             >
               <Link
                 href={link}

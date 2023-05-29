@@ -6,6 +6,7 @@ import { GlobalProps } from "../public/Assets/Types/types";
 import "../styles/globals.css";
 import "@fontsource/cairo";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 function MyApp({ Component, pageProps }) {
   // Global Props Context

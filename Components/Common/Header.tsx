@@ -2,7 +2,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const headerLinks = [
   {
@@ -37,9 +37,20 @@ const headerLinks = [
 
 const Header = () => {
   let [sidebarIsActive, setSidebarIsActive] = useState(false);
+  let [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    let handleScroll = () => {
+      if (window.scrollY > 500 && !isScrolled) {
+        setIsScrolled(true);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <header
-      className="fixed top-0 left-0 w-full flex items-center justify-between px-24 bg-green
+      className="fixed top-0 left-0 w-full flex items-center justify-between px-24 bg-green bg-opacity-70
       tab:py-5 tab:px-10  z-50"
       style={{ direction: "ltr" }}
     >
@@ -94,6 +105,18 @@ const Header = () => {
       >
         <FontAwesomeIcon icon={faBars} className="text-4xl text-white" />
       </button>
+      {/* {isScrolled && */}
+      <div className="fixed bottom-10 right-10">
+        <Link
+          className="px-4 py-2 bg-darkBlue border-darkBlue border-2 rounded-2xl text-white text-3xl"
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSfNF4QUVDppaiUl3uFrmrvjzT1cca5B_5p4QKgplhfq5GT6Ew/viewform"
+          }
+          target="_blank"
+        >
+          للتسجيل
+        </Link>
+      </div>
     </header>
   );
 };

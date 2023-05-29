@@ -108,7 +108,7 @@ const Header = () => {
       {/* {isScrolled && */}
       <div className="fixed bottom-10 right-10">
         <Link
-          className="px-4 py-2 bg-darkBlue border-darkBlue border-2 rounded-2xl text-white text-3xl"
+          className="px-4 py-2 bg-darkBlue border-green border-2 rounded-2xl text-white text-3xl"
           href={
             "https://docs.google.com/forms/d/e/1FAIpQLSfNF4QUVDppaiUl3uFrmrvjzT1cca5B_5p4QKgplhfq5GT6Ew/viewform"
           }

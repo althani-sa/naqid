@@ -23,12 +23,12 @@ const Committe = ({ committeeHeadline, committeeMembers }) => {
           return (
             <div
               key={i}
-              className="relative after:centerH after:top-full after:w-full after:h-3 after:rounded-full after:bg-green z-10"
+              className="relative after:centerH after:top-full after:w-full after:h-3 after:rounded-full after:bg-green z-10 min-h-[30rem]"
             >
               <Image
                 src={image}
                 alt=""
-                className=" w-full h-auto "
+                className=" centerH w-auto h-[30rem] bottom-0 "
                 width={10000}
                 height={10000}
               />

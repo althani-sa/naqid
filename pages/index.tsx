@@ -32,6 +32,12 @@ import Clerks from "Components/Sections/Clerks";
 import clerksImage from "../public/Assets/Images/ClerksImage.png";
 import FAQ from "Components/Sections/FAQ";
 import { motion } from "framer-motion";
+import rania from "../public/Assets/Images/Persons/rania.png";
+import amani from "../public/Assets/Images/Persons/amani.png";
+import adel from "../public/Assets/Images/Persons/adel.png";
+import mhd from "../public/Assets/Images/Persons/mhd.png";
+import hosain from "../public/Assets/Images/Persons/hosain.png";
+import abdul from "../public/Assets/Images/Persons/abdul.png";
 
 export default function Home({
   homepageData,
@@ -383,17 +389,17 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
       },
       {
         name: "أ. د. محمد الشحات عبد المجيد",
-        image: personImage.src,
+        image: mhd.src,
       },
       {
         name: "د. رانية محمد العرضاوي",
-        image: personImage.src,
+        image: rania.src,
       },
     ],
     trainersTeamHeadline: "فريق البرنامج من المدربين :",
     trainersTeam: [
       {
-        image: personImage.src,
+        image: mhd.src,
         name: "أ. د. محمد الشحات عبدالمجيد",
       },
       {
@@ -401,7 +407,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         name: "د. صالح الزهراني",
       },
       {
-        image: personImage.src,
+        image: abdul.src,
         name: "د. عبدالله العقيبي",
       },
       {
@@ -409,7 +415,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         name: "أ. بثينة محمد الجرب",
       },
       {
-        image: personImage.src,
+        image: amani.src,
         name: "د. أماني أبو رحمة",
       },
       {
@@ -417,7 +423,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         name: "د. علي النهابي",
       },
       {
-        image: personImage.src,
+        image: rania.src,
         name: "د. رانية العرضاوي",
       },
       {
@@ -425,7 +431,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         name: "د. مصعب باجابر ",
       },
       {
-        image: personImage.src,
+        image: adel.src,
         name: "د. عادل الزهراني ",
       },
     ],

@@ -28,7 +28,7 @@ const Committe = ({ committeeHeadline, committeeMembers }) => {
               <Image
                 src={image}
                 alt=""
-                className=" centerH w-auto h-[30rem] bottom-0 "
+                className=" centerH w-full h-auto min-h-[20rem] bottom-0 "
                 width={10000}
                 height={10000}
               />

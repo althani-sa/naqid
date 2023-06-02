@@ -19,6 +19,7 @@ export interface ProgramDetail {
 export interface Person {
   name: string;
   image: string;
+  noBg?: boolean;
 }
 
 export interface Faq {

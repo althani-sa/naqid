@@ -38,6 +38,11 @@ import adel from "../public/Assets/Images/Persons/adel.png";
 import mhd from "../public/Assets/Images/Persons/mhd.png";
 import hosain from "../public/Assets/Images/Persons/hosain.png";
 import abdul from "../public/Assets/Images/Persons/abdul.png";
+import jaber from "../public/Assets/Images/Persons/jaber.png";
+import ali from "../public/Assets/Images/Persons/aliN.png";
+import baz3i from "../public/Assets/Images/Persons/baz3i.png";
+import salehZ from "../public/Assets/Images/Persons/salehZ.png";
+import logo from "../public/Assets/Svg/TextlessLogo.svg";
 
 export default function Home({
   homepageData,
@@ -385,7 +390,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
     committeeMembers: [
       {
         name: "أ.د. سعد بن عبد الرحمن البازعي",
-        image: personImage.src,
+        image: baz3i.src,
       },
       {
         name: "أ. د. محمد الشحات عبد المجيد",
@@ -396,14 +401,14 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         image: rania.src,
       },
     ],
-    trainersTeamHeadline: "فريق البرنامج من المدربين :",
+    trainersTeamHeadline: "فريق المدربين وكتاب الحقائب التدريبية:",
     trainersTeam: [
       {
         image: mhd.src,
         name: "أ. د. محمد الشحات عبدالمجيد",
       },
       {
-        image: personImage.src,
+        image: salehZ.src,
         name: "د. صالح الزهراني",
       },
       {
@@ -411,15 +416,16 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         name: "د. عبدالله العقيبي",
       },
       {
-        image: personImage.src,
+        image: logo.src,
         name: "أ. بثينة محمد الجرب",
+        noBg: true,
       },
       {
         image: amani.src,
         name: "د. أماني أبو رحمة",
       },
       {
-        image: personImage.src,
+        image: ali.src,
         name: "د. علي النهابي",
       },
       {
@@ -427,7 +433,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         name: "د. رانية العرضاوي",
       },
       {
-        image: personImage.src,
+        image: jaber.src,
         name: "د. مصعب باجابر ",
       },
       {
@@ -435,11 +441,11 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         name: "د. عادل الزهراني ",
       },
     ],
-    reviewersHeadline: "فريق البرنامج من المراجعين :",
+    reviewersHeadline: "فريق البرنامج:",
     reviewers: [
       "د. ماجد العنزي",
       "أ. د. علاء الغامدي",
-      "د. أماني أبو رحمة",
+      // "د. أماني أبو رحمة",
       "د. رانية العرضاوي",
       "د. سارة العتيبي",
       "د. سماهر الضامن",
@@ -451,7 +457,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
     cretiqueClerksHeadline: "المستكتبون للنماذج النقدية: ",
     cretiqueClerks: [
       "أ. د. بسمة عروس",
-      "د. مرفت العرضاوي",
+      // "د. مرفت العرضاوي",
       "د. أمل السعيدي",
       "أ. عبدالله التويجري",
       "د. عبدالله العقيبي",

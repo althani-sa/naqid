@@ -42,8 +42,9 @@ const Footer = ({}) => {
             </li>
             <li className="link mb-9 text-end">
               <a
-                href={"/#about"}
+                href={"https://www.scl.sa/"}
                 rel="noreferrer"
+                target="_blank"
                 className=" font-Larrseit text-sm tab:text-2xl text-white opacity-70 "
               >
                 من نحن

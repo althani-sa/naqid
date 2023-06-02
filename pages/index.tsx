@@ -42,7 +42,7 @@ import clerksImage from "../public/Assets/Images/ClerksImage.png";
 import FAQ from "Components/Sections/FAQ";
 import { motion } from "framer-motion";
 import rania from "../public/Assets/Images/Persons/rania.png";
-import amani from "../public/Assets/Images/Persons/amani.png";
+import amani from "../public/Assets/Images/Persons/amani.webp";
 import adel from "../public/Assets/Images/Persons/adel.png";
 import mhd from "../public/Assets/Images/Persons/mhd.png";
 import hosain from "../public/Assets/Images/Persons/hosain.png";
@@ -82,7 +82,7 @@ export default function Home({
             aboutUsText={homepageData.aboutUsText}
           />
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -94,7 +94,7 @@ export default function Home({
             goalsText={homepageData.goalsText}
             goalsImage={goalsImage.src}
           />
-        </motion.div>
+        </motion.div> */}
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}

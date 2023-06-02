@@ -58,7 +58,7 @@ const FAQ = ({ faqsHeadline, faqs }) => {
             className="absolute top-4 left-20 tab:left-10"
             icon={faArrowDown}
           />
-          <h4 className=" font-bold mb-4">ما هي آلية التسجيل؟</h4>
+          <h4 className=" font-bold mb-4">ما آلية التسجيل؟</h4>
           <p
             className={`mb-2 duration-200 ${
               activeQuestionIndex == faqs.length

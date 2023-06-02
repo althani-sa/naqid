@@ -43,6 +43,7 @@ import ali from "../public/Assets/Images/Persons/aliN.png";
 import baz3i from "../public/Assets/Images/Persons/baz3i.png";
 import salehZ from "../public/Assets/Images/Persons/salehZ.png";
 import logo from "../public/Assets/Svg/TextlessLogo.svg";
+import Head from "next/head";
 
 export default function Home({
   homepageData,
@@ -50,180 +51,185 @@ export default function Home({
   homepageData: HomepageProps;
 }) {
   return (
-    <div>
-      <Landing
-        landingImage={homepageData.landingImage}
-        landingSupportingText={homepageData.landingSupportingText}
-      />
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <About
-          aboutUsImage={aboutImage.src}
-          aboutUsSections={homepageData.aboutUsSections}
-          aboutUsText={homepageData.aboutUsText}
+    <>
+      <Head>
+        <title>ناقد | الجمعية السعودية للأدب المقارن</title>
+      </Head>
+      <div>
+        <Landing
+          landingImage={homepageData.landingImage}
+          landingSupportingText={homepageData.landingSupportingText}
         />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <Goals
-          goalsHeadline={homepageData.goalsHeadline}
-          goalsText={homepageData.goalsText}
-          goalsImage={goalsImage.src}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <Target
-          durationHeadline={homepageData.durationHeadline}
-          durationText={homepageData.durationText}
-          targetHeadline={homepageData.targetHeadline}
-          targetText={homepageData.targetText}
-          targetImage={targetImage.src}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <Agenda
-          agendaHeadline={homepageData.agendaHeadline}
-          agendaDetails={homepageData.agendaDetails}
-          agendaText={homepageData.agendaText}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <Conditions
-          conditions={homepageData.conditions}
-          conditionsHeadline={homepageData.conditionsHeadline}
-          conditionsImage={homepageData.conditionsImage}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <Sections
-          programSections={homepageData.programSections}
-          programSectionsHeadline={homepageData.programSectionsHeadline}
-          programSectionsImage={sectionsImage.src}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <Details
-          programDetails={homepageData.programDetails}
-          programDetailsHeadline={homepageData.programDetailsHeadline}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <Outputs
-          programOutputsHeadline={homepageData.programOutputsHeadline}
-          programOutputsImage={outputsImage.src}
-          programOutputsText={homepageData.programOutputsText}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <Committe
-          committeeHeadline={homepageData.committeeHeadline}
-          committeeMembers={homepageData.committeeMembers}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <Trainers
-          trainersTeam={homepageData.trainersTeam}
-          trainersTeamHeadline={homepageData.trainersTeamHeadline}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <Reviewers
-          reviewers={homepageData.reviewers}
-          reviewersHeadline={homepageData.reviewersHeadline}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <Clerks
-          cretiqueClerks={homepageData.cretiqueClerks}
-          cretiqueClerksHeadline={homepageData.cretiqueClerksHeadline}
-          profileClerks={homepageData.profileClerks}
-          profileClerksHeadline={homepageData.profileClerksHeadline}
-          clerksImage={clerksImage.src}
-        />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-        }}
-      >
-        <FAQ
-          faqs={homepageData.faqs}
-          faqsHeadline={homepageData.faqsHeadline}
-        />
-      </motion.div>
-    </div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <About
+            aboutUsImage={aboutImage.src}
+            aboutUsSections={homepageData.aboutUsSections}
+            aboutUsText={homepageData.aboutUsText}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <Goals
+            goalsHeadline={homepageData.goalsHeadline}
+            goalsText={homepageData.goalsText}
+            goalsImage={goalsImage.src}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <Target
+            durationHeadline={homepageData.durationHeadline}
+            durationText={homepageData.durationText}
+            targetHeadline={homepageData.targetHeadline}
+            targetText={homepageData.targetText}
+            targetImage={targetImage.src}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <Agenda
+            agendaHeadline={homepageData.agendaHeadline}
+            agendaDetails={homepageData.agendaDetails}
+            agendaText={homepageData.agendaText}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <Conditions
+            conditions={homepageData.conditions}
+            conditionsHeadline={homepageData.conditionsHeadline}
+            conditionsImage={homepageData.conditionsImage}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <Sections
+            programSections={homepageData.programSections}
+            programSectionsHeadline={homepageData.programSectionsHeadline}
+            programSectionsImage={sectionsImage.src}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <Details
+            programDetails={homepageData.programDetails}
+            programDetailsHeadline={homepageData.programDetailsHeadline}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <Outputs
+            programOutputsHeadline={homepageData.programOutputsHeadline}
+            programOutputsImage={outputsImage.src}
+            programOutputsText={homepageData.programOutputsText}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <Committe
+            committeeHeadline={homepageData.committeeHeadline}
+            committeeMembers={homepageData.committeeMembers}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <Trainers
+            trainersTeam={homepageData.trainersTeam}
+            trainersTeamHeadline={homepageData.trainersTeamHeadline}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <Reviewers
+            reviewers={homepageData.reviewers}
+            reviewersHeadline={homepageData.reviewersHeadline}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <Clerks
+            cretiqueClerks={homepageData.cretiqueClerks}
+            cretiqueClerksHeadline={homepageData.cretiqueClerksHeadline}
+            profileClerks={homepageData.profileClerks}
+            profileClerksHeadline={homepageData.profileClerksHeadline}
+            clerksImage={clerksImage.src}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <FAQ
+            faqs={homepageData.faqs}
+            faqsHeadline={homepageData.faqsHeadline}
+          />
+        </motion.div>
+      </div>
+    </>
   );
 }
 

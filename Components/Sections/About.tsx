@@ -46,7 +46,7 @@ const About = ({ aboutUsText, aboutUsSections, aboutUsImage }) => {
                   className="flexCenter centerV right-0 h-full text-center px-10 rounded-full bg-green text-white text-3xl
                 "
                 >
-                  0{i}
+                  0{i + 1}
                 </span>
               </div>
             );

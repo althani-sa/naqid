@@ -11,9 +11,20 @@ const DetailCard = ({ detail, active, activateDetail }) => {
     >
       <div className="relative w-4/10 aspect-square mb-4">
         <Image
+          src={detail.icon}
+          alt=""
+          className={`absCenter w-full h-auto duration-300 ${
+            active && "opacity-0"
+          }`}
+          width={10000}
+          height={10000}
+        />
+        <Image
           src={detail.whiteIcon}
           alt=""
-          className="absCenter w-full h-auto"
+          className={`absCenter w-full h-auto duration-300 ${
+            active ? "opacity-100" : "opacity-0"
+          }`}
           width={10000}
           height={10000}
         />

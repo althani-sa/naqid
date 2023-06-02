@@ -9,6 +9,7 @@ import targetImage from "../public/Assets/Images/TargetImage.png";
 import sectionsImage from "../public/Assets/Images/Sections.png";
 import outputsImage from "../public/Assets/Images/OutputsImage.png";
 import icon1 from "../public/Assets/Svg/Details/1.svg";
+
 import icon2 from "../public/Assets/Svg/Details/2.svg";
 import icon3 from "../public/Assets/Svg/Details/3.svg";
 import icon4 from "../public/Assets/Svg/Details/4.svg";
@@ -16,6 +17,14 @@ import icon5 from "../public/Assets/Svg/Details/5.svg";
 import icon6 from "../public/Assets/Svg/Details/6.svg";
 import icon7 from "../public/Assets/Svg/Details/7.svg";
 import icon8 from "../public/Assets/Svg/Details/8.svg";
+import white1 from "../public/Assets/Svg/Details/white1.svg";
+import white2 from "../public/Assets/Svg/Details/white2.svg";
+import white3 from "../public/Assets/Svg/Details/white3.svg";
+import white4 from "../public/Assets/Svg/Details/white4.svg";
+import white5 from "../public/Assets/Svg/Details/white5.svg";
+import white6 from "../public/Assets/Svg/Details/white6.svg";
+import white7 from "../public/Assets/Svg/Details/white7.svg";
+import white8 from "../public/Assets/Svg/Details/white8.svg";
 import personImage from "../public/Assets/Images/Person.png";
 import About from "Components/Sections/About";
 import Goals from "Components/Sections/Goals";
@@ -326,7 +335,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
     programDetails: [
       {
         icon: icon1.src,
-        whiteIcon: icon1.src,
+        whiteIcon: white1.src,
         title: "المحور الأول",
         subTitle: "ما النقد؟",
         brief:
@@ -334,7 +343,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
       },
       {
         icon: icon2.src,
-        whiteIcon: icon2.src,
+        whiteIcon: white2.src,
         title: "المحور الثاني",
         subTitle: "من الناقد؟",
         brief:
@@ -342,7 +351,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
       },
       {
         icon: icon3.src,
-        whiteIcon: icon3.src,
+        whiteIcon: white3.src,
         title: "المحور الثالث",
         subTitle: "كيف يقرأ الناقد؟ ",
         brief:
@@ -350,7 +359,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
       },
       {
         icon: icon4.src,
-        whiteIcon: icon4.src,
+        whiteIcon: white4.src,
         title: "المحور الرابع",
         subTitle: "أين ذهب النقد؟ ",
         brief:
@@ -358,7 +367,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
       },
       {
         icon: icon5.src,
-        whiteIcon: icon5.src,
+        whiteIcon: white5.src,
         title: "المحور الخامس",
         subTitle: "ما مشروعك النقدي؟ ",
         brief:
@@ -366,7 +375,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
       },
       {
         icon: icon6.src,
-        whiteIcon: icon6.src,
+        whiteIcon: white6.src,
         title: "المحور السادس",
         subTitle: "لقاءات بنقاد ومبدعين",
         brief:
@@ -374,7 +383,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
       },
       {
         icon: icon7.src,
-        whiteIcon: icon7.src,
+        whiteIcon: white7.src,
         title: "المحور السابع",
         subTitle: "ورش عمل تطبيقية",
         brief:
@@ -382,7 +391,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
       },
       {
         icon: icon8.src,
-        whiteIcon: icon8.src,
+        whiteIcon: white8.src,
         title: "المحور الثامن",
         subTitle: "مراجعة المشروعات النقدية ",
         brief:

@@ -42,7 +42,7 @@ import clerksImage from "../public/Assets/Images/ClerksImage.png";
 import FAQ from "Components/Sections/FAQ";
 import { motion } from "framer-motion";
 import rania from "../public/Assets/Images/Persons/rania.png";
-import amani from "../public/Assets/Images/Persons/Amani.webp";
+import amani from "../public/Assets/Images/Persons/Amani.png";
 import adel from "../public/Assets/Images/Persons/adel.png";
 import mhd from "../public/Assets/Images/Persons/mhd.png";
 import hosain from "../public/Assets/Images/Persons/hosain.png";

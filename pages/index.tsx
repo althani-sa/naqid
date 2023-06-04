@@ -453,7 +453,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
       },
       {
         image: adel.src,
-        name: "د. عادل الزهراني ",
+        name: "أ.د. عادل الزهراني ",
       },
     ],
     reviewersHeadline: "فريق البرنامج:",
@@ -469,7 +469,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
       "أ. نورة السبيعي",
       "أ. إبراهيم الثاني",
     ],
-    cretiqueClerksHeadline: "المستكتبون للنماذج النقدية: ",
+    cretiqueClerksHeadline: " كتاب النماذج النقدية: ",
     cretiqueClerks: [
       "أ. د. بسمة عروس",
       // "د. مرفت العرضاوي",
@@ -478,7 +478,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
       "د. عبدالله العقيبي",
       "د. در صاف الحمداني",
     ],
-    profileClerksHeadline: "المستكتبون للملفات التعريفية: ",
+    profileClerksHeadline: "كتاب الملفات التعريفية: ",
     profileClerks: [
       "أ. محمد الحرز ",
       "د. رانية العرضاوي",

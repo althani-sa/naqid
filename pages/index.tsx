@@ -289,7 +289,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         days: "20-19 يوليو",
       },
       {
-        title: "المحور الخامس للبرنامج (أين ذهب النقد؟ )",
+        title: "المحور الخامس للبرنامج (ما مشروعك النقدي؟ )",
         days: "24-23 يوليو",
       },
       {
